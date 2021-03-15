@@ -7,7 +7,7 @@ const updateTime = () => {
     const options = {
         second: "numeric",
         minute: "numeric",
-        hours: "numeric",
+        hour: "numeric",
         day: "numeric",
         month: "numeric",
         year: "numeric",

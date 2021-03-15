@@ -20,11 +20,11 @@ const updateTime = () => {
 window.addEventListener("load", event => {
     event.preventDefault();
     updateTime();
-    const milliseconds = 1000 - new Date().getMilliseconds();
+    const leftMilliseconds = 1000 - new Date().getMilliseconds();
     setTimeout(() => {
         setInterval(() => {
             updateTime();
         }, 1000);
         updateTime();
-    }, milliseconds);
+    }, leftMilliseconds);
 });
